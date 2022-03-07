@@ -1,0 +1,28 @@
+<section class="section">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-half">
+            <h3 class="title is-3">Recherche d'IP</h3>
+            
+<!--Rajouter [FormGroupe]... fromContrelN-->
+
+                <form [formGroup]="ipForm" (ngSubmit)="recherche()">
+                <div class="field">
+                    <label class="label">Saisie de l'IP</label>
+                    <div class="control">
+                        <input class="input is-success" type="text" formControlName="ip" placeholder="Entre une IP" value="">
+                    </div>
+                </div>
+
+                <div class="field is-grouped">
+                    <div class="control">
+                        <button class="button is-link">Soumettre</button>
+                        
+                    </div>
+                </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</section>
